@@ -171,7 +171,7 @@ end
 
 function score_text()
 	if score >= 50 then
-		  return "giga score!!!"
+		  return "super score!!!"
 	else
 	   return "tu peux mieux faire:("	
 		
