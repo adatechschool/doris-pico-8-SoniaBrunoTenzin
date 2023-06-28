@@ -38,7 +38,7 @@ end
 end
 
 function _draw()
-cls(12)
+cls(1)
 
 --map(0,0,0,0,16,16)
 --vaisseau
