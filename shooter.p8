@@ -9,10 +9,7 @@ explosions={}
 spawn_enemies()
 create_explosions(63,63)
 score=0
-monster={x1=60,y1=60,x2=68,y2=60,
-   x3=60,y3=68,x4=68,y4=68}
-draw_monster(monster)
---monsters={}
+
 end
 
 function _update60()
@@ -32,7 +29,6 @@ if #enemies==0 then
 end  
 update_enemies()
 update_explosions()
-monster=update_monster(monster)
 end
 
 function _draw()
@@ -56,8 +52,6 @@ end
 	print("score:",2,2,7)
 	print(score,2,8)
 	
-	--big crab
- draw_monster(monster)
 end
 
 
@@ -178,22 +172,6 @@ function score_text()
 end
 
 
--->8
-
--- boss de fin
-function draw_monster(m)
- spr(16,m.x1,m.y1)
- spr(17,m.x2,m.y2)
- spr(32,m.x3,m.y3)
- spr(33,m.x4,m.y4)
-end
-
-function update_monster(m)
- return {x1=m.x1,y1=m.y1+1,
-    x2=m.x2,y2=m.y2+1,
-    x3=m.x3,y3=m.y3+1,
-    x4=m.x4,y4=m.y4+1}
-end
 __gfx__
 00000000000000000000000008000800bbbbbbbbbbbffbbbbbbbbbbb00000000b3bb3bbbbbbbbbbbbbbffbbbbbbffbbb08000800cccccccccccccccc00000000
 00000000b0000b000900009080000080bbb8bbbbbbbffbbbabbbbbbb000ff000bb33bbbbbbb88bbbbbbffbbbbbbffbbb80000080cccccccccccc777700000000
